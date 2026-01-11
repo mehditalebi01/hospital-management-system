@@ -250,8 +250,7 @@ The following features are planned for future releases:
 ## 👨‍💻 Author
 
 **Mehdi Talebikatir**  
-📧 Email: [your-email@example.com](mailto:your-email@example.com)  
-🎓 Matricola: 558948  
+📧 Email: [mehditalebikatir@gmail.com] 
 🌐 Live Demo: [https://project1.webtlb.it](https://project1.webtlb.it)
 
 ---
