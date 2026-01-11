@@ -1,4 +1,176 @@
-**Home Page**
+# 🏥 Hospital Management System (HMS)
+
+<div align="center">
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+### 🌐 [Live Demo](https://project1.webtlb.it)
+
+*A comprehensive web-based solution for modern hospital administration*
+
+</div>
+
+---
+
+## 📋 Table of Contents
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Database Setup](#-database-setup)
+- [User Roles](#-user-roles)
+- [Screenshots](#-screenshots)
+- [Future Scope](#-future-scope)
+- [Author](#-author)
+
+---
+
+## 📖 Introduction
+
+The **Hospital Management System (HMS)** is a web-based application designed to streamline and automate the administrative and clinical operations of a hospital. It replaces manual, paper-based systems with a digital solution that efficiently manages:
+
+- 👥 Patient information
+- 👨‍⚕️ Doctor schedules
+- 📅 Appointments
+- 📋 Medical records
+
+The system provides a centralized platform for **Admins**, **Doctors**, and **Patients** to interact and perform their respective tasks seamlessly.
+
+---
+
+## ✨ Features
+
+### 🎯 Core Objectives
+
+| Objective | Description |
+|-----------|-------------|
+| ⚡ **Efficiency** | Reduce time spent on manual record-keeping and appointment scheduling |
+| 🌍 **Accessibility** | Allow patients to book appointments and view medical history online from anywhere |
+| 🔒 **Data Integrity** | Centralize data storage to minimize errors and ensure consistency |
+| 📊 **Management Control** | Provide administrators with comprehensive management tools |
+
+### 🔑 Key Modules
+
+#### 🔐 Admin Module
+The Administrator has full control over the system:
+- 📊 **Dashboard**: Overview of system statistics (Total Doctors, Users, Appointments)
+- 👨‍⚕️ **Doctor Management**: Add, edit, and delete doctor profiles; Manage specializations
+- 👥 **User Management**: View and manage registered patients/users
+- 📅 **Appointment Management**: View all appointments and their status
+- 🔍 **Session Logs**: Monitor user and doctor login logs for security auditing
+- 📧 **Inquiries**: Manage "Contact Us" queries
+
+#### 👨‍⚕️ Doctor Module
+Doctors can manage their schedules and patient interactions:
+- 🏠 **Dashboard**: Personal overview of appointments
+- 📅 **Appointment Management**: View log of scheduled appointments
+- 🏥 **Patient Management**: Add and manage patient details
+- 📋 **Medical History**: Add and view medical history records for patients
+- ⚙️ **Profile Management**: Update personal details and consultancy fees
+
+#### 🧑‍🤝‍🧑 User (Patient) Module
+Patients can access services without visiting the hospital physically:
+- 🔐 **Registration/Login**: Secure account creation and authentication
+- 📅 **Book Appointment**: Schedule appointments with doctors based on specialization and availability
+- 📜 **Appointment History**: View past and upcoming appointments
+- 🩺 **Medical History**: Access personal medical records added by doctors
+- 👤 **Profile Management**: Update personal information and password
+
+---
+
+## 🛠️ Tech Stack
+
+### Architecture
+The project is built using a standard **LAMP/WAMP** stack:
+
+| Layer | Technology |
+|-------|-----------|
+| 🎨 **Frontend** | HTML5, CSS3, JavaScript/jQuery, Bootstrap |
+| ⚙️ **Backend** | PHP (Core PHP) |
+| 🗄️ **Database** | MySQL (RDBMS) |
+| 🖥️ **Server** | Apache (via XAMPP/WAMP) |
+
+---
+
+## 💻 Installation
+
+### Prerequisites
+- 🖥️ XAMPP/WAMP/LAMP server
+- 🌐 Modern web browser
+- 📦 PHP 7.4 or higher
+- 🗄️ MySQL 5.7 or higher
+
+### Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/hospital-management-system.git
+   ```
+
+2. **Move to server directory**
+   ```bash
+   # For XAMPP
+   mv hospital-management-system C:/xampp/htdocs/
+
+   # For WAMP
+   mv hospital-management-system C:/wamp64/www/
+   ```
+
+3. **Import the database**
+   - Open phpMyAdmin (`http://localhost/phpmyadmin`)
+   - Create a new database named `hms`
+   - Import the `hms.sql` file from the project root
+
+4. **Configure database connection**
+   - Update database credentials in configuration files if needed
+
+5. **Access the application**
+   ```
+   http://localhost/hospital-management-system/main/index.php
+   ```
+
+---
+
+## 🗄️ Database Setup
+
+The database (`hms`) consists of several normalized tables:
+
+| Table | Description |
+|-------|-------------|
+| 🔑 `admin` | Admin credentials |
+| 👥 `users` | Patient registration details |
+| 👨‍⚕️ `doctors` | Doctor profiles (Specialization, Fees, Contact) |
+| 🏷️ `doctorspecilization` | Lookup table for specializations |
+| 📅 `appointment` | Links Users and Doctors with appointment details |
+| 🏥 `tblpatient` | Detailed patient records |
+| 📋 `tblmedicalhistory` | Medical records (BP, Sugar, Weight, Prescription) |
+| 📊 `userlog` / `doctorslog` | Audit tables for login/logout tracking |
+| 📧 `tblcontactus` | Contact form messages |
+
+---
+
+## 👥 User Roles
+
+### Default Login Credentials
+(Check `Login Details.txt` in the project root)
+
+| Role | Access Level |
+|------|--------------|
+| 🔐 **Admin** | Full system control |
+| 👨‍⚕️ **Doctor** | Patient management & medical records |
+| 🧑‍🤝‍🧑 **Patient** | Appointment booking & medical history |
+
+---
+
+## 📸 Screenshots
+
+
+
+### 🏠 Home Page
+
 ![image](https://github.com/Karthikg1908/Hospital-Management-System/assets/86306862/9c96ffcb-2bef-484b-a996-548fde802a26)
 ![image](https://github.com/Karthikg1908/Hospital-Management-System/assets/86306862/f960b36c-a726-4e02-8416-0284d2f1f9e9)
 ![image](https://github.com/Karthikg1908/Hospital-Management-System/assets/86306862/4c583894-e124-4606-a971-c9925bdf23ad)
@@ -81,3 +253,53 @@
 **Database Design**
 
 ![image](https://github.com/Karthikg1908/Hospital-Management-System/assets/86306862/71e01826-2737-4491-8020-497922f60a3a)
+
+---
+
+## 🚀 Future Scope
+
+The following features are planned for future releases:
+
+| Feature | Description |
+|---------|-------------|
+| 💳 **Payment Gateway Integration** | Online payment for consultancy fees |
+| 💊 **Pharmacy Module** | Integration with hospital pharmacy for medicine inventory and billing |
+| 🔬 **Lab Management** | Managing lab tests and reports |
+| 📱 **Mobile Application** | Dedicated mobile app for easier access |
+| 🎥 **Telemedicine Integration** | Video consultation features |
+| 📊 **Analytics Dashboard** | Advanced reporting and analytics |
+| 🔔 **SMS/Email Notifications** | Automated appointment reminders |
+
+---
+
+## 👨‍💻 Author
+
+**Mehdi Talebikatir**  
+📧 Email: [your-email@example.com](mailto:your-email@example.com)  
+🎓 Matricola: 558948  
+🌐 Live Demo: [https://project1.webtlb.it](https://project1.webtlb.it)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- Bootstrap for the responsive UI framework
+- PHP community for excellent documentation
+- All contributors who helped improve this system
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project helpful, please give it a star!
+
+**Made with ❤️ for better healthcare management**
+
+</div>
+
