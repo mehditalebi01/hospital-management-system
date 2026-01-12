@@ -41,7 +41,7 @@ The system provides a centralized platform for **Admins**, **Doctors**, and **Pa
 
 ---
 
-## ✨ Features
+## ✨ Features:
 
 ### 🎯 Core Objectives
 
