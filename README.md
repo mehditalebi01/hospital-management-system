@@ -247,10 +247,13 @@ The following features are planned for future releases:
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
 **Mehdi Talebikatir**  
 📧 Email: [mehditalebikatir@gmail.com] 
+
+**Benyamin Baharizadeh, 560587**  
+
 🌐 Live Demo: [https://project1.webtlb.it](https://project1.webtlb.it)
 
 ---

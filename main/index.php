@@ -487,7 +487,7 @@ while ($row=mysqli_fetch_array($ret)) {
     </footer>
    <div class="copy" style="text-align: right; font-family: 'Times New Roman', Times, serif;">
     <div class="container">
-       <b> Hospital Management System | It's Me </b>            
+       <b> Hospital Management System | Mehdi & Benyamin </b>            
     </div>
 </div>
 </body>
